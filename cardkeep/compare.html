@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How CardKeep compares with other ways to keep business cards, and the results of a real-card reading test.">
+  <title>How CardKeep Compares</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="cardkeep.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="CardKeep home">Card<span>Keep</span></a>
+    <nav aria-label="CardKeep navigation">
+      <a aria-current="page" href="compare.html">How it compares</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main class="document" style="max-width: 980px">
+    <p class="eyebrow">How it compares</p>
+    <h1>Built to remember people, not to collect them.</h1>
+    <p class="lede">Most tools that touch business cards are built around a platform, a team or a sales pipeline. CardKeep is built for one person who meets people and wants to remember them, privately.</p>
+
+    <section aria-labelledby="choices-heading">
+      <h2 id="choices-heading">The usual choices</h2>
+      <div class="table-wrap">
+        <table class="compare">
+          <thead><tr><th scope="col">Alternative</th><th scope="col">What it does well</th><th scope="col">Where CardKeep is different</th></tr></thead>
+          <tbody>
+            <tr><td>The iPhone camera's built-in text recognition</td><td class="them">Free and built in; turns a single number or email into a contact.</td><td class="us">A one-off copy of text. CardKeep keeps the card image, where you met, duplicate checks, a review step and your Mac.</td></tr>
+            <tr><td>Dedicated card-scanner apps</td><td class="them">Mature scanning; some export to sales software.</td><td class="us">Many ask for an account and keep your contacts on their servers. CardKeep has no account and keeps contacts in your own iCloud.</td></tr>
+            <tr><td>Digital business-card platforms</td><td class="them">Sharing your own card; capturing leads for teams.</td><td class="us">Built around their card and their subscription. CardKeep is for the cards you receive and the people behind them.</td></tr>
+            <tr><td>A sales CRM</td><td class="them">Pipelines, teams and reporting.</td><td class="us">Heavy for remembering people. CardKeep needs no setup and has no pipeline.</td></tr>
+            <tr><td>Contacts and a notes app</td><td class="them">Free and familiar.</td><td class="us">Loses the card and the context. CardKeep keeps both with every contact.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="test-heading">
+      <h2 id="test-heading">Real-card reading test</h2>
+      <p>On October 6, 2026 we scanned 11 real business cards once each in CardKeep (beta build 279, with AI card reading allowed) and in a competing card-scanner app (free tier). We saved each first result without corrections and checked every printed detail against the card itself.</p>
+      <p>The cards came from Japan, the UK, Italy, Costa Rica, the Turks and Caicos Islands and the US. They included all-caps print, vertical layouts, logo badges, extensions, toll-free numbers, two hotels on one card and a QR code.</p>
+
+      <div class="table-wrap">
+        <table class="compare results">
+          <thead><tr><th scope="col">Printed detail</th><th scope="col">CardKeep</th><th scope="col">Competing app</th></tr></thead>
+          <tbody>
+            <tr><td>All printed details</td><td class="num us">60 of 70 (86%)<span class="bar ck"><i style="width:86%"></i></span></td><td class="num them">31 of 70 (44%)<span class="bar other"><i style="width:44%"></i></span></td></tr>
+            <tr><td>Names</td><td class="num us">10 of 10<span class="bar ck"><i style="width:100%"></i></span></td><td class="num them">7 of 10<span class="bar other"><i style="width:70%"></i></span></td></tr>
+            <tr><td>Companies</td><td class="num us">8 of 9<span class="bar ck"><i style="width:89%"></i></span></td><td class="num them">1 of 9<span class="bar other"><i style="width:11%"></i></span></td></tr>
+            <tr><td>Job titles</td><td class="num us">9 of 9<span class="bar ck"><i style="width:100%"></i></span></td><td class="num them">6 of 9<span class="bar other"><i style="width:67%"></i></span></td></tr>
+            <tr><td>Email addresses</td><td class="num us">11 of 11<span class="bar ck"><i style="width:100%"></i></span></td><td class="num them">4 of 11<span class="bar other"><i style="width:36%"></i></span></td></tr>
+            <tr><td>Websites</td><td class="num us">6 of 7<span class="bar ck"><i style="width:86%"></i></span></td><td class="num them">0 of 7<span class="bar other"><i style="width:0%"></i></span></td></tr>
+            <tr><td>Addresses</td><td class="num us">4 of 6<span class="bar ck"><i style="width:67%"></i></span></td><td class="num them">0 of 6<span class="bar other"><i style="width:0%"></i></span></td></tr>
+            <tr><td>Phone numbers</td><td class="num us">12 of 18<span class="bar ck"><i style="width:67%"></i></span></td><td class="num them">13 of 18<span class="bar other"><i style="width:72%"></i></span></td></tr>
+            <tr><td>Cards needing no correction</td><td class="num us">2 of 11</td><td class="num them">0 of 11</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>What we saw</h3>
+      <ul>
+        <li><strong>Email is where the difference matters most.</strong> The competing app produced plausible but wrong addresses, a "9" for a "g", or "travet" for "travel", that would bounce without warning. CardKeep read all 11 correctly.</li>
+        <li><strong>Labels and badges are not people.</strong> The competing app named one contact "Toll-Free Us" and turned a hotel's membership badges into a person called "Fine Hotel". CardKeep left the name empty on a card that printed no person.</li>
+        <li><strong>Phone numbers were CardKeep's weak spot.</strong> The AI read every number correctly, but CardKeep's own formatting then mishandled the UK "(0)", one "(+)1" number and US toll-free numbers printed on foreign cards. Those fixes are in the next beta build, and we will repeat this test on it.</li>
+        <li><strong>Neither app was perfect.</strong> Only 2 of CardKeep's 11 cards, and none of the competing app's, needed no correction at all. That is why CardKeep highlights uncertain fields and never saves without your review.</li>
+      </ul>
+
+      <div class="notice">
+        <strong>About this test.</strong> Eleven cards is a small sample from one industry, scanned by one person, so small differences mean little. The test measures first-pass reading only, not speed, sync or ease of use. The competing app is not named; results reflect its free tier on that date. Values were scored as correct when right apart from capitals, accents or punctuation, a country code added to a number that printed none, or one of two names or properties printed on the same card.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Summa Cruxis LLC · <a href="../index.html">Summa Cruxis</a></p>
+    <p>CardKeep is an independent application by Summa Cruxis LLC. iPhone and iCloud are trademarks of Apple Inc. Other product names belong to their owners.</p>
+  </footer>
+</body>
+</html>

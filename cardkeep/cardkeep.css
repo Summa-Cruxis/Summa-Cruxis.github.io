@@ -1,0 +1,25 @@
+/* CardKeep pages: extends ../styles.css. */
+.wordmark span { color: var(--green); }
+.status { display: inline-block; margin-top: 8px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: .86rem; font-weight: 700; }
+.cards.five { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+.cards.five article { min-height: 0; }
+.cards.five h3 { margin-top: 18px; }
+.band { padding: 48px 0 80px; border-top: 1px solid var(--line); }
+.compare { width: 100%; border-collapse: collapse; margin-top: 28px; font-size: .95rem; }
+.compare th, .compare td { padding: 12px 10px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.compare thead th { color: var(--muted); font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; }
+.compare td:first-child { font-weight: 700; }
+.compare .us { color: var(--text); }
+.compare .them { color: var(--muted); }
+.table-wrap { overflow-x: auto; }
+.results td.num { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.bar { display: block; height: 8px; margin-top: 6px; border-radius: 4px; background: var(--line); overflow: hidden; min-width: 90px; }
+.bar i { display: block; height: 100%; border-radius: 4px; }
+.bar.ck i { background: var(--green); }
+.bar.other i { background: var(--muted); }
+.stat-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 32px; }
+.stat { padding: 22px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); }
+.stat b { display: block; font-size: 2.4rem; line-height: 1.1; letter-spacing: -.03em; }
+.stat span { color: var(--muted); font-size: .92rem; }
+.fine { color: var(--muted); font-size: .92rem; }
+.steps { padding-left: 1.2rem; }
