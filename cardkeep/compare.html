@@ -41,22 +41,23 @@
 
     <section aria-labelledby="test-heading">
       <h2 id="test-heading">Real-card reading test</h2>
-      <p>On October 6, 2026 we scanned 11 real business cards once each in CardKeep (beta build 279, with AI card reading allowed) and in a competing card-scanner app (free tier). We saved each first result without corrections and checked every printed detail against the card itself.</p>
+      <p>On October 6, 2026 we scanned 11 real business cards once each in CardKeep (beta build 279, with AI card reading allowed) and in a competing card-scanner app (free tier). We saved each first result without corrections and checked every printed detail against the card itself. The test exposed phone-number formatting problems in CardKeep, so we fixed them and rescanned the same 11 cards the same day on build 289. The competing app was scanned once.</p>
       <p>The cards came from Japan, the UK, Italy, Costa Rica, the Turks and Caicos Islands and the US. They included all-caps print, vertical layouts, logo badges, extensions, toll-free numbers, two hotels on one card and a QR code.</p>
 
       <div class="table-wrap">
         <table class="compare results">
-          <thead><tr><th scope="col">Printed detail</th><th scope="col">CardKeep</th><th scope="col">Competing app</th></tr></thead>
+          <thead><tr><th scope="col">11 real cards</th><th scope="col">CardKeep, first test</th><th scope="col">CardKeep, after fixes</th><th scope="col">Competing app</th></tr></thead>
           <tbody>
-            <tr><td>All printed details</td><td class="num us">60 of 70 (86%)<span class="bar ck"><i style="width:86%"></i></span></td><td class="num them">31 of 70 (44%)<span class="bar other"><i style="width:44%"></i></span></td></tr>
-            <tr><td>Names</td><td class="num us">10 of 10<span class="bar ck"><i style="width:100%"></i></span></td><td class="num them">7 of 10<span class="bar other"><i style="width:70%"></i></span></td></tr>
-            <tr><td>Companies</td><td class="num us">8 of 9<span class="bar ck"><i style="width:89%"></i></span></td><td class="num them">1 of 9<span class="bar other"><i style="width:11%"></i></span></td></tr>
-            <tr><td>Job titles</td><td class="num us">9 of 9<span class="bar ck"><i style="width:100%"></i></span></td><td class="num them">6 of 9<span class="bar other"><i style="width:67%"></i></span></td></tr>
-            <tr><td>Email addresses</td><td class="num us">11 of 11<span class="bar ck"><i style="width:100%"></i></span></td><td class="num them">4 of 11<span class="bar other"><i style="width:36%"></i></span></td></tr>
-            <tr><td>Websites</td><td class="num us">6 of 7<span class="bar ck"><i style="width:86%"></i></span></td><td class="num them">0 of 7<span class="bar other"><i style="width:0%"></i></span></td></tr>
-            <tr><td>Addresses</td><td class="num us">4 of 6<span class="bar ck"><i style="width:67%"></i></span></td><td class="num them">0 of 6<span class="bar other"><i style="width:0%"></i></span></td></tr>
-            <tr><td>Phone numbers</td><td class="num us">12 of 18<span class="bar ck"><i style="width:67%"></i></span></td><td class="num them">13 of 18<span class="bar other"><i style="width:72%"></i></span></td></tr>
-            <tr><td>Cards needing no correction</td><td class="num us">2 of 11</td><td class="num them">0 of 11</td></tr>
+            <tr><td>Cards needing no correction</td><td class="num them">2 of 11<span class="bar other"><i style="width:18%"></i></span></td><td class="num us">9 of 11<span class="bar ck"><i style="width:82%"></i></span></td><td class="num them">0 of 11<span class="bar other"><i style="width:0%"></i></span></td></tr>
+            <tr><td>All printed details</td><td class="num them">60 of 70 (86%)<span class="bar other"><i style="width:86%"></i></span></td><td class="num us">66 of 70 (94%)<span class="bar ck"><i style="width:94%"></i></span></td><td class="num them">31 of 70 (44%)<span class="bar other"><i style="width:44%"></i></span></td></tr>
+            <tr><td>Names</td><td class="num them">10 of 10<span class="bar other"><i style="width:100%"></i></span></td><td class="num us">10 of 10<span class="bar ck"><i style="width:100%"></i></span></td><td class="num them">7 of 10<span class="bar other"><i style="width:70%"></i></span></td></tr>
+            <tr><td>Companies</td><td class="num them">8 of 9<span class="bar other"><i style="width:89%"></i></span></td><td class="num us">8 of 9<span class="bar ck"><i style="width:89%"></i></span></td><td class="num them">1 of 9<span class="bar other"><i style="width:11%"></i></span></td></tr>
+            <tr><td>Job titles</td><td class="num them">9 of 9<span class="bar other"><i style="width:100%"></i></span></td><td class="num us">9 of 9<span class="bar ck"><i style="width:100%"></i></span></td><td class="num them">6 of 9<span class="bar other"><i style="width:67%"></i></span></td></tr>
+            <tr><td>Email addresses</td><td class="num them">11 of 11<span class="bar other"><i style="width:100%"></i></span></td><td class="num us">11 of 11<span class="bar ck"><i style="width:100%"></i></span></td><td class="num them">4 of 11<span class="bar other"><i style="width:36%"></i></span></td></tr>
+            <tr><td>Websites</td><td class="num them">6 of 7<span class="bar other"><i style="width:86%"></i></span></td><td class="num us">6 of 7<span class="bar ck"><i style="width:86%"></i></span></td><td class="num them">0 of 7<span class="bar other"><i style="width:0%"></i></span></td></tr>
+            <tr><td>Addresses</td><td class="num them">4 of 6<span class="bar other"><i style="width:67%"></i></span></td><td class="num us">4 of 6<span class="bar ck"><i style="width:67%"></i></span></td><td class="num them">0 of 6<span class="bar other"><i style="width:0%"></i></span></td></tr>
+            <tr><td>Phone numbers</td><td class="num them">12 of 18<span class="bar other"><i style="width:67%"></i></span></td><td class="num us">18 of 18<span class="bar ck"><i style="width:100%"></i></span></td><td class="num them">13 of 18<span class="bar other"><i style="width:72%"></i></span></td></tr>
+            <tr><td>Details added that are not on the card</td><td class="num them">3</td><td class="num us">0</td><td class="num them">5</td></tr>
           </tbody>
         </table>
       </div>
@@ -65,12 +66,12 @@
       <ul>
         <li><strong>Email is where the difference matters most.</strong> The competing app produced plausible but wrong addresses, a "9" for a "g", or "travet" for "travel", that would bounce without warning. CardKeep read all 11 correctly.</li>
         <li><strong>Labels and badges are not people.</strong> The competing app named one contact "Toll-Free Us" and turned a hotel's membership badges into a person called "Fine Hotel". CardKeep left the name empty on a card that printed no person.</li>
-        <li><strong>Phone numbers were CardKeep's weak spot.</strong> The AI read every number correctly, but CardKeep's own formatting then mishandled the UK "(0)", one "(+)1" number and US toll-free numbers printed on foreign cards. Those fixes are in the next beta build, and we will repeat this test on it.</li>
-        <li><strong>Neither app was perfect.</strong> Only 2 of CardKeep's 11 cards, and none of the competing app's, needed no correction at all. That is why CardKeep highlights uncertain fields and never saves without your review.</li>
+        <li><strong>Phone numbers were CardKeep's weak spot, now fixed.</strong> The AI read every number correctly, but CardKeep's own formatting mishandled the UK "(0)", a "(+)1" number and US toll-free numbers printed on foreign cards. After the fix, all 18 numbers came out right.</li>
+        <li><strong>Still not perfect.</strong> After the fixes, 9 of the 11 cards needed no correction, against none for the competing app. The other two were a hotel card that prints two properties, which CardKeep merged into one entry, and an address that left out the printed region name. That is why CardKeep highlights uncertain fields and never saves without your review.</li>
       </ul>
 
       <div class="notice">
-        <strong>About this test.</strong> Eleven cards is a small sample from one industry, scanned by one person, so small differences mean little. The test measures first-pass reading only, not speed, sync or ease of use. The competing app is not named; results reflect its free tier on that date. Values were scored as correct when right apart from capitals, accents or punctuation, a country code added to a number that printed none, or one of two names or properties printed on the same card.
+        <strong>About this test.</strong> Eleven cards is a small sample from one industry, scanned by one person, so small differences mean little. The test measures first-pass reading only, not speed, sync or ease of use. The competing app is not named; results reflect its free tier on that date, and it was not rescanned. Rescanning measured CardKeep after fixes found by this same test. Values were scored as correct when right apart from capitals, accents or punctuation, a country code added to a number that printed none, or one of two names or properties printed on the same card.
       </div>
     </section>
   </main>
