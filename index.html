@@ -3,40 +3,63 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="GeoSidecar support, workflow guidance, and privacy information.">
-  <title>GeoSidecar — RAW Geotagging for Hasselblad X2D Cameras</title>
+  <meta name="description" content="GeoSidecar records photography GPS tracks on iPhone and applies reviewed coordinates directly to the Adobe Lightroom Classic catalog on Mac. No XMP sidecars.">
+  <title>GeoSidecar — GPS for Hasselblad RAWs in Lightroom Classic</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <a class="wordmark" href="index.html" aria-label="GeoSidecar home"><span>Geo</span>Sidecar</a>
     <nav aria-label="Main navigation">
-      <a href="support.html">Support</a>
+      <a aria-current="page" href="index.html">Overview</a>
+      <a href="support.html">Workflow &amp; Help</a>
       <a href="privacy.html">Privacy</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <p class="eyebrow">iPhone + Mac</p>
-      <h1>Put every RAW on the map.</h1>
-      <p class="lede">Record a Photo Day on iPhone, review every match on Mac, and create Lightroom-compatible XMP sidecars without modifying the original .3FR files.</p>
+      <p class="eyebrow">Photography · iPhone + Mac + Lightroom Classic</p>
+      <h1>Every photo, in the right place.</h1>
+      <p class="lede">GeoSidecar records your location on iPhone, matches it to Hasselblad X2D RAW photographs on Mac, and sends approved GPS coordinates straight into your <strong>Lightroom Classic catalog</strong>. No XMP sidecars. No changes to your .3FR originals.</p>
       <div class="hero-actions">
-        <a class="button" href="support.html">Read the workflow</a>
-        <a class="text-link" href="privacy.html">How your location stays private</a>
+        <a class="button" href="support.html#workflow">See the complete workflow</a>
+        <a class="text-link" href="support.html#installation">Set up Lightroom</a>
+        <a class="text-link" href="privacy.html">Privacy by design</a>
       </div>
     </section>
 
     <section class="workflow" aria-labelledby="workflow-heading">
       <div class="section-heading">
         <p class="eyebrow">The workflow</p>
-        <h2 id="workflow-heading">Three deliberate steps. No RAW modification.</h2>
+        <h2 id="workflow-heading">Record on iPhone. Review on Mac. Confirm in Lightroom.</h2>
       </div>
       <div class="cards">
-        <article><span class="number">01</span><h3>Record</h3><p>Start Photo Day once on iPhone. End it after the shoot and the verified track synchronizes through your private iCloud.</p></article>
-        <article><span class="number">02</span><h3>Review</h3><p>Select the RAW folder on Mac. Inspect exact, interpolated, and low-confidence matches on a map before writing anything.</p></article>
-        <article><span class="number">03</span><h3>Prepare</h3><p>Create matching XMP sidecars for Lightroom Classic. Your proprietary Hasselblad .3FR masters remain untouched.</p></article>
+        <article><span class="number">01 · RECORD</span><h3>A Photo Day</h3><p>Start a high-accuracy location track on iPhone before photographing. Optionally schedule a multi-day Photo Trip with daily track segments and camera-clock calibration.</p></article>
+        <article><span class="number">02 · MATCH</span><h3>See every location</h3><p>Private iCloud sync brings tracks to Mac. Select RAWs already imported into Lightroom, preview matches on the map, and review accuracy, time zone and existing GPS.</p></article>
+        <article><span class="number">03 · APPLY</span><h3>GPS in your catalog</h3><p>GeoSidecar Catalog Bridge writes approved coordinates into Lightroom Classic. The app distinguishes GPS confirmed as applied from updates still queued.</p></article>
       </div>
+    </section>
+
+    <section class="workflow" aria-labelledby="benefits-heading">
+      <div class="section-heading">
+        <p class="eyebrow">Built for photographers</p>
+        <h2 id="benefits-heading">Your originals and your edits stay yours.</h2>
+      </div>
+      <div class="cards">
+        <article><span class="number">RAW-SAFE</span><h3>No sidecar clutter</h3><p>The .3FR file is not modified, and GeoSidecar creates no XMP sidecars. It works with the GPS field in your active Lightroom Classic catalog.</p></article>
+        <article><span class="number">PRECISE</span><h3>Confidence before action</h3><p>Exact, interpolated and uncertain matches are differentiated. Long gaps require review; existing GPS is protected unless you explicitly choose replacement.</p></article>
+        <article><span class="number">PRIVATE</span><h3>No account with us</h3><p>iPhone tracks sync through your personal iCloud container. Manual GPX import is also available. Your location history is not sent to a Summa Cruxis server.</p></article>
+      </div>
+    </section>
+
+    <section class="workflow" aria-labelledby="requirements-heading">
+      <div class="section-heading">
+        <p class="eyebrow">What you'll need</p>
+        <h2 id="requirements-heading">A clear, catalog-first workflow.</h2>
+      </div>
+      <p class="lede">Use GeoSidecar on iPhone and Mac, a Hasselblad .3FR shoot, and Adobe Lightroom Classic on Mac with GeoSidecar Catalog Bridge enabled. Import the photographs into Lightroom <strong>before</strong> sending GPS. The Mac app provides a guided plug-in installation command. <a href="support.html#installation">Installation instructions</a>.</p>
+      <p class="lede">For traveling photographers, keep shooting in a Lightroom Travel catalog and later merge it into the master using <strong>File → Import from Another Catalog</strong>. <a href="support.html#faq">Troubleshooting and common questions</a>.</p>
     </section>
 
     <section class="workflow" aria-labelledby="more-heading">
@@ -50,7 +73,7 @@
 
   <footer>
     <p>© 2026 Summa Cruxis LLC</p>
-    <p>GeoSidecar is an independent application by Summa Cruxis LLC and is not affiliated with, sponsored by, or endorsed by Hasselblad. Hasselblad and X2D are trademarks of their respective owners.</p>
+    <p>GeoSidecar is an independent application by Summa Cruxis LLC and is not affiliated with, sponsored by, or endorsed by Hasselblad or Adobe. Hasselblad, X2D and Lightroom are trademarks of their respective owners.</p>
   </footer>
 </body>
 </html>
